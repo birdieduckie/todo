@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>TODO</title>
+</head>
+<body>
+  <div class="container">
+    <div class="control">
+      <input placeholder="Введи задачу" class="field">
+      <button class="add" type="button">Добавить</button>
+      <select class="filter">
+        <option value="task">Все задачи</option>
+        <option value="unsuccess">Только невыполненные</option>
+        <option value="success">Только выполненные</option>
+      </select>
+    </div>
+    <div class="list"></div>
+  </div>
+  <script src="js/todo.js"></script>
+</body>
+</html>
