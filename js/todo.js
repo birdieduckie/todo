@@ -10,7 +10,7 @@ function createTask(value) {
   const checkbox = document.createElement('input');
   const deleteButton = document.createElement('input')
 
-  task.classList.add('task', 'unsuccess');
+  task.classList.add('task', 'unsuccess', 'list-group-item');
   task.textContent = value;
 
   checkbox.type = 'checkbox';
@@ -18,8 +18,8 @@ function createTask(value) {
   checkbox.addEventListener('click', completeTask);
 
   deleteButton.type = 'button';
-  deleteButton.classList.add('delete');
-  deleteButton.value = 'Удоли';
+  deleteButton.classList.add('delete', 'btn', 'btn-danger');
+  deleteButton.value = 'X';
   deleteButton.addEventListener('click', deleteTask);
 
   task.appendChild(checkbox);
@@ -111,9 +111,6 @@ function loadTasks() {
 }
 
 filter.addEventListener('change', filterTasks);
-
 add.addEventListener('click', addTask);
-
 field.addEventListener('keydown', handleEnterDown);
-
 document.addEventListener('DOMContentLoaded', loadTasks)
