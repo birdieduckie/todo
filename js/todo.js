@@ -59,7 +59,7 @@ function filterTasks() {
   const tasks = document.querySelectorAll('.task');
   tasks.forEach(task => {
     if (task.classList.contains(filter.value)) {
-      task.style.display = 'block';
+      task.style.display = 'flex';
     } else {
       task.style.display = 'none';
     }
